@@ -50,9 +50,9 @@ class ChartController extends Controller
 
                 $femaleUsers = User::where('gender', '=', 'female')
                     ->count();
-                $oldFemaleUsers = User::where('age', '>', '50')->where('gender', '=', 'male')
+                $oldFemaleUsers = User::where('age', '>', '50')->where('gender', '=', 'female')
                     ->count();
-                $yongFemaleUsers = User::where('age', '<', '50')->where('gender', '=', 'male')
+                $yongFemaleUsers = User::where('age', '<', '50')->where('gender', '=', 'female')
                     ->count();
 
 
